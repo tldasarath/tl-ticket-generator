@@ -1,14 +1,19 @@
+// firebase.js
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID",
+    apiKey: "AIzaSyAv5eb6I1AEY_UfX1S8r2IVOWJD0sIVFXo",
+    authDomain: "swayamvara-ticket-generator.firebaseapp.com",
+    projectId: "swayamvara-ticket-generator",
+    storageBucket: "swayamvara-ticket-generator.firebasestorage.app",
+    messagingSenderId: "586038179958",
+    appId: "1:586038179958:web:195e1f3393364472c28757",
+    measurementId: "G-QWX9RVZ9L8"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
+const auth = getAuth(app);
+
+export { auth };
