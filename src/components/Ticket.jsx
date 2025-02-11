@@ -37,7 +37,7 @@ const Ticket = ({ userDetails, phoneNumber }) => {
     <div className="flex flex-col h-full items-center justify-center p-4 bg-white">
       <div
         ref={ticketRef}
-        className="p-6 rounded-xl w-[380px] border bg-gray-200 shadow-md relative"
+        className="p-6 rounded-xl w-full border bg-white shadow-md relative"
       >
         <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-xl"></div>
 
@@ -52,14 +52,14 @@ const Ticket = ({ userDetails, phoneNumber }) => {
           <p><span className="font-semibold">Seat Category:</span> {userDetails.seatCategory}</p>
         </div>
 
-        <div className="flex justify-center my-6">
+        {/* <div className="flex justify-center my-6">
           <div className="bg-gray-100 p-3 rounded-lg border shadow-md">
             <QRCode 
               value={`https://event.ticket/${phoneNumber}`} 
               size={100} 
             />
           </div>
-        </div>
+        </div> */}
 
         <p className="text-center text-gray-500 text-sm">
           Scan this QR code at the entrance

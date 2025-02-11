@@ -130,9 +130,9 @@ const VerifyPhoneNumber = ({ onVerificationSuccess }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-4">
-      <div className="w-full max-w-md space-y-4 bg-white p-6 rounded-lg shadow-md">
-        <h2 className="text-2xl font-bold text-center text-gray-800">
+    <div className="flex flex-col items-center justify-center h-full bg-gray-50 py-4">
+      <div className="w-full  space-y-4 bg-white p-6 rounded-lg shadow-md">
+        <h2 className="text-xl font-bold text-start text-gray-800">
           Phone Verification
         </h2>
 
@@ -182,7 +182,7 @@ const VerifyPhoneNumber = ({ onVerificationSuccess }) => {
           {confirmationResult && (
             <>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label className="block text-sm font-medium text-gray-700 ">
                   Verification Code
                 </label>
                 <input

@@ -27,9 +27,9 @@ const UserDetailsForm = ({ phoneNumber, onSubmitSuccess }) => {
   };
 
   return (
-    <div className="flex justify-center items-center h-full bg-gray-50 p-4">
-      <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">User Details</h2>
+    <div className="flex justify-center items-center h-full w-full bg-gray-50 p-4">
+      <div className="w-full  bg-white rounded-lg shadow-md ">
+        <h2 className="text-xl font-bold text-gray-800 mb-1 text-center">User Details</h2>
         
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
