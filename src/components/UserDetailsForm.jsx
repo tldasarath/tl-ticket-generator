@@ -27,9 +27,9 @@ const UserDetailsForm = ({ phoneNumber, onSubmitSuccess }) => {
   };
 
   return (
-    <div className="flex justify-center items-center h-full w-full bg-gray-50 p-4">
-      <div className="w-full  bg-white rounded-lg shadow-md ">
-        <h2 className="text-xl font-bold text-gray-800 mb-1 text-center">User Details</h2>
+    <div className="flex justify-center items-center h-full w-full bg-gray-500 mt-2 bg-opacity-40 p-4">
+      <div className="w-full    ">
+        <h2 className="text-xl font-bold text-gray-800 mb-1 text-start">User Details</h2>
         
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
@@ -47,8 +47,8 @@ const UserDetailsForm = ({ phoneNumber, onSubmitSuccess }) => {
               placeholder="Enter your name"
             />
           </div>
-
-          <div>
+<div className='flex justify-between gap-4'>
+          <div className="w-[45%]">
             <label htmlFor="sex" className="block text-sm font-medium text-gray-700 mb-1">
               Sex
             </label>
@@ -67,7 +67,7 @@ const UserDetailsForm = ({ phoneNumber, onSubmitSuccess }) => {
             </select>
           </div>
 
-          <div>
+          <div className="w-[45%]">
             <label htmlFor="age" className="block text-sm font-medium text-gray-700 mb-1">
               Age
             </label>
@@ -84,7 +84,7 @@ const UserDetailsForm = ({ phoneNumber, onSubmitSuccess }) => {
               placeholder="Enter your age"
             />
           </div>
-
+          </div>
           <div>
             <label htmlFor="seatCategory" className="block text-sm font-medium text-gray-700 mb-1">
               Seat Category

@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <div className="relative h-screen w-screen bg-white overflow-hidden">
       {/* Background Video */}
-      {/* <video autoPlay loop muted playsInline className="absolute top-0 left-0 w-full h-full object-cover">
+      <video autoPlay loop muted playsInline className="absolute top-0 left-0 w-full h-full object-cover">
         <source src="/bg.mp4" type="video/mp4" />
         Your browser does not support the video tag.
-      </video> */}
+      </video>
 
       {/* Main Content */}
       <div className="h-full w-full relative flex overflow-y-auto bg-stone-950 bg-opacity-10">

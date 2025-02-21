@@ -75,7 +75,7 @@ const FormComponent = () => {
       {/* Step 1: Phone Verification */}
       {!isPhoneVerified ? (
         <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }}>
-          <VerifyPhoneNumber onVerificationSuccess={handleVerificationSuccess} />
+          <VerifyPhoneNumber isPhoneVerified={isPhoneVerified} onVerificationSuccess={handleVerificationSuccess} />
         </motion.div>
       ) : !showTicket ? (
         // Step 2: User Details Form
@@ -110,7 +110,7 @@ const FormComponent = () => {
 
       {/* Event Countdown */}
       <div className="text-center mt-6">
-        <p className="text-lg font-semibold text-stone-500">⏳ Event Starts In: {countdown}</p>
+        <p className="text-lg font-thin  bg-stone-400 bg-opacity-40 p-2 w-fit  font-serif text-red-800">⏳ Event Starts In: <span className="text-black font-bold font-sans  text-xl">{countdown}</span> </p>
       </div>
     </div>
   );
