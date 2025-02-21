@@ -154,17 +154,7 @@ function Ticket() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-500 via-pink-400 to-pink-300 flex flex-col items-center justify-center p-6">
       {/* Demo Preview */}
-      <div className="mb-8 text-center">
-        <h2 className="text-white text-2xl font-bold mb-4">Your Digital Event Pass</h2>
-        <div className="bg-white/20 backdrop-blur-sm p-4 rounded-xl inline-block">
-          <img 
-            src="https://images.unsplash.com/photo-1589041127168-9b1915731dc6?q=80&w=800" 
-            alt="Textile Store Opening"
-            className="w-[300px] h-[200px] object-cover rounded-lg shadow-lg mb-4"
-          />
-          <p className="text-white text-sm">Join us for an exclusive shopping experience</p>
-        </div>
-      </div>
+   
 
       {/* Ticket Container */}
       <div

@@ -140,6 +140,8 @@ const UserDetailsForm = ({ phoneNumber, onSubmitSuccess }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmitSuccess(formData);
+    onSubmitSuccess(completeFormData);
+
   };
 
   const handleChange = (e) => {
@@ -215,7 +217,7 @@ const UserDetailsForm = ({ phoneNumber, onSubmitSuccess }) => {
                 name="age"
                 value={formData.age}
                 onChange={handleChange}
-                required
+                // required
                 min="0"
                 max="120"
                 className="block w-full pl-10 px-4 py-3  text-black rounded-lg border border-gray-300 focus:ring-2 focus:ring-purple-500 focus:border-transparent"

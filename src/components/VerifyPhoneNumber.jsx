@@ -338,7 +338,7 @@ const VerifyPhoneNumber = ({ onVerificationSuccess, isPhoneVerified, onVerified 
 
 
   // useEffect(() => {
-    
+
   //     window.recaptchaVerifier = new RecaptchaVerifier(auth,
   //       "recaptcha-container",
   //       {
@@ -353,7 +353,7 @@ const VerifyPhoneNumber = ({ onVerificationSuccess, isPhoneVerified, onVerified 
   //       },
   //       auth
   //     );
-    
+
   // }, []);
   const validatePhone = (phone) => {
     const phoneRegex = /^\+[1-9]\d{1,14}$/; // E.164 format (e.g., +919876543210)
@@ -431,28 +431,28 @@ const VerifyPhoneNumber = ({ onVerificationSuccess, isPhoneVerified, onVerified 
         <motion.form
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          // onSubmit={handleVerifyOtp}
+           onSubmit={handleVerifyOtp}
           className="space-y-4"
         >
           <div>
-      <label htmlFor="otp" className="block text-sm font-medium text-gray-700 mb-1">
-        Verification Code:
-      </label>
-      <div className="flex gap-2 justify-center">
-        {Array.from({ length: 6 }).map((_, index) => (
-          <input
-            key={index}
-            type="text"
-            maxLength={1}
-            value={otp[index]}
-            onChange={(e) => handleOtpChange(e, index)}
-            onKeyDown={(e) => handleBackspace(e, index)}
-            ref={(el) => (otpRefs.current[index] = el)}
-            className="w-10 h-10 text-center text-black text-lg border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500 focus:outline-none"
-          />
-        ))}
-      </div>
-    </div>
+            <label htmlFor="otp" className="block text-sm font-medium text-gray-700 mb-1">
+              Verification Code:
+            </label>
+            <div className="flex gap-2 justify-center">
+              {Array.from({ length: 6 }).map((_, index) => (
+                <input
+                  key={index}
+                  type="text"
+                  maxLength={1}
+                  value={otp[index]}
+                  onChange={(e) => handleOtpChange(e, index)}
+                  onKeyDown={(e) => handleBackspace(e, index)}
+                  ref={(el) => (otpRefs.current[index] = el)}
+                  className="w-10 h-10 text-center text-black text-lg border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500 focus:outline-none"
+                />
+              ))}
+            </div>
+          </div>
           {error && <p className="text-red-500 text-sm">{error}</p>}
           <button
             type="submit"
